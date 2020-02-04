@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input placeholder ="Usuario"  [(ngModel)]="usuario.usuario"> </ion-input>
+  <br />
+  <ion-input placeholder="Password" type="password" [(ngModel)]="usuario.pass"></ion-input>
+  <br />
+  <ion-button (click)="crearUsuario()"> Crear Usuario</ion-button>
+  <ion-button (click)="login()">Login</ion-button>
+</ion-content>
